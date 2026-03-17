@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Iosevka Charon', monospace;
+    background-color: white;
+    color: black;
+}
+
+#przyciski {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+}
+#kalkulator{
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);;
+    max-width: 500px;
+    text-align: center; 
+}
+#przyciski button {
+    padding: 5px 2px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+input {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 8px;
+}
