@@ -4,14 +4,14 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'Iosevka Charon', monospace;
-    background-color: white;
+    background-color: #f0f2f5;
     color: black;
 }
 
 #przyciski {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 7px;
+    gap: 4px;
 }
 #kalkulator{
     background-color: whitesmoke;
@@ -20,14 +20,26 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);;
     max-width: 500px;
     text-align: center; 
+    width: 400px;
 }
 #przyciski button {
-    padding: 5px 2px;
-    border-radius: 3px;
+    padding: 10px 5px;
+    border-radius: 2px;
     border: 1px solid black;
+    transition: transform 0.1s, background-color 0.1s;
+    cursor: pointer;
 }
 input {
     width: 100%;
     padding: 10px 10px;
     margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+#przyciski button:hover {
+    background-color: #cccccc;
+    transform: scale(1.10);
+}
+
+#przyciski button:active {
+    transform: scale(0.98);
 }
